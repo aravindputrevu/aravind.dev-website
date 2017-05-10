@@ -1,4 +1,4 @@
-baseurl             = "http://aravindputrevu.in"
+baseurl             = "/"
 languageCode        = "en-us"
 title               = "Aravind Putrevu"
 theme               = "introduction"
@@ -20,7 +20,7 @@ author        = "Aravind Putrevu" # Full name shows on blog post pages
 firstname     = "Aravind" # First name shows in introduction on main page
 tagline       = "Developer for life, Evangelist by Virtue" # Appears after the introduction
 introheight   = "large" # Input either 'medium' or 'large' or 'fullheight'
-avatar        = "img/aravind.jpg" # Path to image in static folder eg. img/avatar.png 
+avatar        = "img/profile.jpg" # Path to image in static folder eg. img/avatar.png 
 email         = "" # Shows in contact section, or leave blank to omit
 localtime     = false # Show your current local time in contact section
 timezone      = "Asia/Calcutta" # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
