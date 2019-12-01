@@ -1,80 +1,239 @@
-baseurl             = "/"
-languageCode        = "en-us"
-title               = "Aravind Putrevu"
-theme               = "introduction"
-enforce_ssl         = "aravindputrevu.in"
-builddrafts         = false
-canonifyurls        = true
-contentdir          = "content"
-layoutdir           = "layouts"
-publishdir          = "public"
-# disqusshortname   = "xxx" # Enable Disqus for comments
-# googleAnalytics   = "xxx"
+baseURL = "/"
+languageCode = "en"                                      # website language
+defaultContentLanguage = "en"                            # [en, zh, ...] determines which i18n file to use
+title = "<aravind.dev/>"                                   # website title
+theme = "LoveIt"                                         # theme
+enableGitInfo = false                                    # whether to use git commit log to generate lastmod record
+hasCJKLanguage = false                                   # whether to include chinese/japanese/korean
+paginate = 10                                             # default amount of posts in each pages
+enableEmoji = true                                       # whether to use emoji code
+enableRobotsTXT = true                                   # whether to use robots.txt
+googleAnalytics = "UA-153551245-1"                                     # [UA-XXXXXXXX-X] google analytics code
+# disqusShortname = ""                             # Disqus shortname to use Disqus in posts
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+                                                         # copyright description used only for seo schema
 
-[permalinks]
-fixed = ":title/"
-blog  = "blog/:slug/"
+                                                      #### Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+pygmentsOptions = "linenos=table"
+pygmentsCodefences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
+
+staticDir = ["static", "../assets/others"]               # static directories
+
+[author]                                              #### Author Info
+  name = "Aravind Putrevu"
+
+[sitemap]                                             #### Sitemap Info
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[Permalinks]                                          #### Permalinks Info (https://gohugo.io/content-management/urls/#permalinks)
+  posts = ":year/:month/:filename"
+
+[menu]                                                #### Menu Info
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blogs"
+    url = "posts"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "Talks"
+    name = "Talks"
+    url = "tags/talks"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "categories"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "tags"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "about"
+    weight = 5
 
 [params]
-author        = "Aravind Putrevu" # Full name shows on blog post pages
-firstname     = "Aravind" # First name shows in introduction on main page
-tagline       = "Developer for life, Evangelist by Virtue" # Appears after the introduction
-introheight   = "large" # Input either 'medium' or 'large' or 'fullheight'
-avatar        = "img/profile.jpg" # Path to image in static folder eg. img/avatar.png 
-email         = "" # Shows in contact section, or leave blank to omit
-localtime     = false # Show your current local time in contact section
-timezone      = "Asia/Calcutta" # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-dateform      = "Jan 2, 2006"
-dateformfull  = "Mon Jan 2 2006 15:04:05 EST"
-cachebuster   = true # Add the current unix timestamp in query string for cache busting css assets
-description   = "Personal Blog"
-faviconfile   = "img/fav.ico"
-highlightjs   = true # Syntax highlighting
-lang          = "en"
-footertext    = "" # Text to show in footer (overrides default text)
+  version = "5.x"                                        # LoveIt theme version
+  description = "Aravind Putrevu's blog"                      # site description
+  keywords = ["Tech", "Elasticsearch", "Distributed Systems", "ML", "Security", "Life"]                   # site keywords
 
-fadein          = true # Turn on/off the fade-in effect
+  #### Home Page Info
+  home_mode = "post"                                     # [post, other] home mode
+  home_paginate = 6                                      # special amount of posts in each home post page
+  avatar = "images/avatar.png"                           # URL of avatar shown in home page
+  subtitle = "Engineer | Evangelist | FOSS Enthusiast"  # subtitle shown in home page
 
-showblog        = true # Show Blog section on home page
-showallposts    = false # Set 'true' to list all posts on home page, or set 'false' to link to separate blog list page
-showlatest      = true # Show latest blog post summary
-sharebuttons    = true # On post pages, show share this social buttons
+  socialShare = true                                     # whether to show social share links in post page
 
-showprojects    = false # Show Projects section on home page
+                                                      #### Footer CopyRight Info
+  since = 2019                                           # Site creation time
+  icp = ''                                               # ICP info only in China (HTML format is allowed)
+  license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+                                                         # license info (HTML format is allowed)
+  gitRepo = ""                                           # public git repo url to link lastmod git commit only then enableGitInfo is true
 
-# This is your projects section. Three images of the same dimensions will look the nicest. If images are omitted, text links will be shown.
-project1link    = "#"
-project1img     = "img/project1.jpg"
-project1title   = "Project 1"
+  linkToMarkdown = true                                  # whether to show link to Raw Markdown content of the post
 
-project2link    = "#"
-project2img     = "img/project2.jpg"
-project2title   = "Project 2"
+                                                      #### site verification code for Google/Bing/Yandex/Pinterest/Baidu
+  google_verification = ""
+  
+  [params.cdn]                                       #### CSS and JS Files CDN
+    fontawesome_free_css = ''                           # for example '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css" integrity="sha256-fdcFNFiBMrNfWL6OcAGQz6jDgNTRxnrLEd4vJYFWScE=" crossorigin="anonymous">'
+    animate_css = ''
+    gitalk_css = ''
+    gitalk_js = ''
+    valine_js = ''
+    jquery_js = ''
+    lazysizes_js = ''
+    smooth_scroll_js = ''
+    katex_css = ''
+    katex_js = ''
+    katex_auto_render_js = ''
+    mermaid_js = ''
+    echarts_js = ''
+    echarts_macarons_js = ''
+    typeit_js = ''
+    jquery_countdown_js = ''
+    aplayer_css = ''
+    aplayer_js = ''
+    meting_js = ''
 
-project3link    = "#"
-project3img     = "img/project3.jpg"
-project3title   = "Project 3"
+  [params.social]                                        # Social Info in home page
+    GitHub = "aravindputrevu"
+    Linkedin = "aravindputrevu"
+    Twitter = "aravindputrevu"
+    #Instagram = ""
+    Email = "aravind@elastic.co"
+    #Facebook = "xxxx"
+    #Telegram = "xxxx"
+    #Medium = "xxxx"
+    #Gitlab = "xxxx"
+    #Youtubelegacy = "xxxx"
+    #Youtubecustom = "xxxx"
+    #Youtubechannel = "xxxx"
+    #Tumblr ="xxxx"
+    #Quora = "aravindputrevu"
+    #Keybase = "xxxx"
+    #Pinterest = "xxxx"
+    #Reddit = "xxxx"
+    #Codepen = "xxxx"
+    #Bitbucket = "xxxx"
+    #Stackoverflow = "xxxx"
+    #Weibo = "xxxx"
+    #Odnoklassniki = "xxxx"
+    #VKontakte = "xxxx"
+    #Flickr = "xxxx"
+    #Xing = "xxxx"
+    #Snapchat = "xxxx"
+    #Soundcloud = "xxxx"
+    #Spotify = "xxxx"
+    #Bandcamp = "xxxx"
+    #Paypal = "xxxx"
+    #Fivehundredpx = "xxxx"
+    #Mix = "xxxx"
+    #Goodreads = "xxxx"
+    #Lastfm = "xxxx"
+    #Foursquare = "xxxx"
+    #Hackernews = "xxxx"
+    #Kickstarter = "xxxx"
+    #Patreon = "xxxx"
+    #Steam = "xxxx"
+    #Twitch = "xxxx"
+    #Strava = "xxxx"
+    #Skype = "xxxx"
+    #Whatsapp = "xxxx"
+    #Zhihu = "xxxx"
+    #Douban = "xxxx"
+    #Angellist = "xxxx"
+    #Slidershare = "xxxx"
+    #Jsfiddle = "xxxx"
+    #Deviantart = "xxxx"
+    #Behance = "xxxx"
+    #Dribble = "xxxx"
+    #Wordpress = "xxxx"
+    #Vine = "xxxx"
+    #Googlescholar = "xxxx"
+    #Researchgate = "xxxx"
+    #Mastodon = "xxxx"
+    #Thingiverse = "xxxx"
 
+  [params.share]                                         # Social Share Links in post page
+    enable = true
+    Twitter = true
+    #Facebook = true
+    Reddit = true
+    Linkedin = true
+    #Pinterest = false
+    #HackerNews = false
+    #Mix = true
+    #Tumblr = true
+    #VKontakte = true
+    #Weibo = true
 
-# Social icons appear in introduction and contact section. Add as many more as you like.
-# Find icon names here: http://fontawesome.io/cheatsheet/
+  [params.publisher]                                     # Publisher Info just for SEO
+    name = "Aravind Putrevu"
+    [params.publisher.logo]
+      url = "logo.png"
+      width = 127
+      height = 40
 
-[[params.social]]
-url = "https://twitter.com/aravindputrevu"
-icon = "twitter"
+  [params.logo]                                          # Website Log Info just for SEO
+    url = "logo.png"
+    width = 127
+    height = 40
 
-[[params.social]]
-url = "https://facebook.com/aravind.putrevu"
-icon = "facebook"
+  [params.image]                                         # Website Image Info just for SEO
+    url = "logo.png"
+    width = 800
+    height = 600
 
-[[params.social]]
-url = "https://linkedin.com/in/aravindputrevu"
-icon = "linkedin"
+  [params.gitalk]                                        # Gittalk Comment Config (https://github.com/gitalk/gitalk)
+    owner = ""
+    repo = ""
+    clientId = ""
+    clientSecret = ""
 
-[[params.social]]
-url = "https://plus.google.com/+aravindputrevu"
-icon = "google-plus"
+  [params.valine]                                        # Valine Comment Config (https://github.com/xCss/Valine)
+    enable = false
+    appId = ""
+    appKey = ""
+    notify = false
+    verify = true
+    avatar = "mp"
+    placeholder = "Your comment ..."
+    visitor = true
+    recordIP = true
 
-[[params.social]]
-url = "https://github.com/aravindputrevu"
-icon = "github"
+[privacy]                                             #### Privacy Info (https://gohugo.io/about/hugo-and-gdpr/)
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[mediaTypes]                                          #### Options to make hugo output .md files.
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+[outputFormats.MarkDown]                              #### Options to make hugo output .md files.
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+[outputs]                                             #### Options to make hugo output .md files.
+  home = ["HTML", "RSS"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]

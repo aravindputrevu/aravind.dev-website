@@ -1,19 +1,45 @@
 +++
-date = "2017-05-07T20:15:25+05:30"
-title = "about"
+date = "2017-05-07T22:42:38+05:30"
+title = ""
 
 +++
 
-Hello Peeps!
+![.](/aravind-about.jpg)
 
-I'm an engineer working in Cloud Security domain at McAfee LLC. I'm from [Visakhapatnam,AP](https://en.wikipedia.org/wiki/Visakhapatnam)., the city of destiny. I mostly code in Java(my first love), JavaScript and some times Android.I am interested in public speaking and teaching. I am a toastmaster too.
+<h1>Hello :wave: I'm Aravind Putrevu</h1>
 
-I cherish technology and love talking about it with people.   
+Nice to see you here! 
 
-My experience includes :
+I believe technology can help change human lives in a positive way! I'm passionate in helping developers succeed in their quest for success. 
 
-1. Having 5+ years of experience in developing applications on various Cloud Platforms like VMWare,AWS,Azure and GCP.
-2. Worked as a individual contributor and collaborated with partners to integrate solutions.
-3. As a Member of Toastmasters International, gave speeches and hosted various events, participated in International Speech Contest.
-4. I'm passionate in evangelizing tech, spoke in various developer meetups regularly and also blog at [Medium](https://medium.com/@aravindputrevu)
+# Work
+
+I'm a Developer who codes in multiple programming languages. 
+
+I work at [Elastic.co](https://elastic.co) as a Developer Advocate. 
+
+I like working on Distributed Systems which form a team to solve complex problems. 
+
+I worked on Financial Systems which detect Fraud, Systems or Method to detect threats in Datacenter using a Detection Engine. 
+
+# Location
+
+I live in `Garden City` [Bengaluru](https://goo.gl/maps/WScrGUpfz25LC3rn6) in India. 
+
+# Talks
+
+As part of work and interest, I speak at a lot of [meetups & conferences](aravind.dev/talks).
+
+# Upcoming Events
+
+Catch me at one of these upcoming [events](aravind.dev/talks).
+
+OR 
+
+You can ping me directly [here](twitter.com/aravindputrevu)! 
+
+
+
+
+
 
