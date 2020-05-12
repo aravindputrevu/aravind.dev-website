@@ -32,11 +32,11 @@ As part of work and interest, I speak at a lot of [meetups & conferences](aravin
 
 # Upcoming Events
 
-Catch me at one of these upcoming [events](aravind.dev/talks).
+Catch me at one of these upcoming [events](/tags/talks).
 
 OR 
 
-You can ping me directly [here](twitter.com/aravindputrevu)! 
+You can ping me directly [here](https://twitter.com/aravindputrevu)! 
 
 
 
