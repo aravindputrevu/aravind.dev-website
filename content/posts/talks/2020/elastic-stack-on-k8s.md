@@ -4,7 +4,7 @@ title = "Running Elastic {Stack} on Kubernetes"
 tags  = ['talks', 'presentations']
 categories = ['Presentations']
 featured_image = ""
-show_in_homepage = false
+show_in_homepage = true
 +++
 
 {{< pdf "https://drive.google.com/file/d/1CDOjXO1ap-ABUTptvkqmXJ9wxccKWjp-/preview" >}}

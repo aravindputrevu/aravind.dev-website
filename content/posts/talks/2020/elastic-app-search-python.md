@@ -4,7 +4,7 @@ title = "Building a Search Experience for Python Web Application"
 tags  = ['talks', 'presentations']
 categories = ['Presentations']
 featured_image = ""
-show_in_homepage = false
+show_in_homepage = true
 +++
 
 {{< pdf "https://drive.google.com/file/d/1QnZlTwX65-Cklssu1BC9NRmb-FZej08K/preview" >}}

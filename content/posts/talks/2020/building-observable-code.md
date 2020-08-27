@@ -4,7 +4,7 @@ title = "Buidling Observable Code and Infrastructure"
 tags  = ['talks', 'presentations']
 categories = ['Presentations']
 featured_image = ""
-show_in_homepage = false
+show_in_homepage = true
 +++
 
 {{< pdf "https://drive.google.com/file/d/1p3bgwSb-rlywAe6GWvXY4A7fVroEKGYh/preview" >}}
